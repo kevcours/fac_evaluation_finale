@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.menu .logo {
+  margin-top: -60px;
+  width: 85%;
+  height: 200px;
+}
+
+.menu .hamburger {
+  display: flex;
+  width: 15%;
+  background-color: #a7cb18;
+}
+
+.menu .hamburger img {
+  width: 100%;
+  height: 80px;
+}
+
+.menu button {
+  background-color: #a7cb18;
+  border: none;
+}
+
+.deroulant {
+  display: none;
+  width: 100%;
+  background-color: #a7cb18;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.deroulant li {
+  padding: 1%;
+  width: 50%;
+  display: flex;
+  border-bottom: solid 2px white;
+}
+
+.deroulant li a {
+  text-decoration: none;
+  color: white;
+}
+
+.deroulant li .logo {
+  width: 10%;
+  height: 20px;
+  color: white;
+  justify-content: space-between;
+}
+
+.deroulant button {
+  background-color: #f9a900;
+  border: none;
+}
+
+.imgPresentation {
+  width: 100%;
+}
+
+.imgPresentation img {
+  width: 100%;
+}
+
+.icon {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.icon .logo {
+  width: 100%;
+}
+
+.logoEnergie {
+  width: 100%;
+  text-align: center;
+  color: #f9a900;
+}
+
+.logoEnergie .chiffre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoEnergie .chiffre .coop {
+  width: 50%;
+  color: #c3a575;
+}
+
+.logoEnergie .chiffre .insta {
+  width: 50%;
+  color: #b3d143;
+}
+
+.logoEnergie .chiffre .produc {
+  width: 50%;
+}
+
+.logoEnergie .chiffre .capital {
+  width: 50%;
+  color: #00afec;
+}
+
+.logoEnergie .chiffre .logo {
+  width: 100%;
+}
+
+.comprendre {
+  width: 100%;
+}
+
+.comprendre h2 {
+  text-align: center;
+}
+
+.comprendre button {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 25%;
+  border: none;
+  background-color: grey;
+}
+
+.comprendre button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=mon_site.css.map */

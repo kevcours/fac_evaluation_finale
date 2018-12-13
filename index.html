@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <link rel="stylesheet" href="./css/mon_site.css">
+  <script>
+    function menu(){
+      if(document.getElementById('deroulant').style.display=="none")
+      {
+        document.getElementById('deroulant').style.display="block";
+      }
+      else
+      {
+        document.getElementById('deroulant').style.display="none";
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="menu">
+  <svg class="logo">
+    <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectives_rectangle_Logo_ajuste"></use>
+  </svg>
+  <div class="hamburger">
+    <button onclick="menu()">
+        <img src="./img/menu.png">
+    </button>
+    
+  </div>
+</div>
+<div class="deroulant" id="deroulant">
+  <ul>
+    <li><a href="#">En savoir plus</a>   
+      <svg class="logo">
+      <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+      </svg>
+    </li>
+    <li><a href="#">Nous découvrir</a>
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+        </svg>
+    </li>
+    <li><a href="#">Nos instalation</a> 
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+            </svg>
+    </li>
+    <li><a href="#">Economisons</a>
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+            </svg>
+    </li>
+    <li><a href="#">En savoir plus</a>
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+            </svg>
+    </li>
+  </ul>
+  <button>Souscrire</button>
+</div>
+<div class="imgPresentation">
+  <img src="./Photos/20161202_101925.jpg">
+</div>
+<div class="icon">
+    <svg class="logo">
+        <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectivesLogo_ss_texte"></use>
+      </svg>
+</div>
+<div class="logoEnergie">
+  <h2>L'energie est notre affaire</h2>
+  <h2>Investissons dans la transistion énergétique</h2>
+  <div class="chiffre">
+    <div class="coop">
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_coop"></use>
+        </svg>
+        <h2>coopérateur</h2>
+        <h2>190</h2>
+    </div>
+    <div class="insta">
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_photovoltaique"></use>
+        </svg>
+        <h2>Installation</h2>
+        <h2>8</h2>
+    </div>
+    <div class="produc">
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_production_energie"></use>
+        </svg>
+        <h2>Production Annuelle</h2>
+        <h2>141 MWh</h2>
+    </div>
+    <div class="capital">
+        <svg class="logo">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_capital"></use>
+        </svg>
+        <h2>Capital</h2>
+        <h2>1129950€</h2>
+    </div>
+
+  </div>
+</div>
+<div class="comprendre">
+  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+  <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+  <ul>
+    <li>Nunc auctor diam ac tincidunt tempor</li>
+    <li>Nunc auctor diam ac tincidunt tempor</li>
+    <li>Nunc auctor diam ac tincidunt tempor</li>
+    
+  </ul>
+  <button><a href="#">Comprendre notre modele de production</a>  <svg class="logo">
+      <use xlink:href="./img/sprite_symbol_pictos.svg#plus"></use>
+    </svg></button>
+</div>
+</body>
+</html>
