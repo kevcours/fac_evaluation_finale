@@ -1,0 +1,11 @@
+@import 'variable';
+@import 'titre';
+@import 'photo';
+@import 'explication';
+
+.temoignage{
+    margin-top: 4%;
+    width: 100%;
+    background-color: $beige;
+    color : $grey;
+}

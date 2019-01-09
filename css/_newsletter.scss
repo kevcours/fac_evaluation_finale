@@ -1,0 +1,13 @@
+@import 'icon';
+@import 'variable';
+.newsletter{
+    color:$white;
+    text-align: center;
+    input{
+        border : solid 1px $black;
+    }
+    button{
+        border : solid 1px $black;
+    }
+
+}

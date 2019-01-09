@@ -1,0 +1,30 @@
+@import 'icon';
+@import 'variable';
+.logoEnergie{
+    width: 100%;
+    text-align: center;
+    color: $orange;
+    .chiffre{
+        display: flex;
+        flex-wrap: wrap;
+        .coop{
+            width: 50%;
+            color: $beige;
+        }
+        .insta{
+            width: 50%;
+            color:$menu;
+        }
+        .produc{
+            width: 50%;
+
+        }
+        .capital{
+            width:50%;
+            color:$bleu;
+        }
+        .logo{
+            width: 100%;
+        }
+    }
+}

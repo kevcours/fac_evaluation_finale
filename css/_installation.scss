@@ -1,0 +1,23 @@
+@import 'variable';
+@import 'titre';
+@import 'photo';
+@import 'explication';
+
+.installation{
+    color: $grey;
+    background-image: url('../svg/points.svg');
+    background-repeat: repeat;
+    ul{
+        li{
+        list-style: none;
+        }
+    }
+    button{
+        border-radius: 5px;
+        background-color: $grey;
+        border:none;
+        width: 100%;
+        font-size: 4vw;
+        color: $white;
+    }
+}

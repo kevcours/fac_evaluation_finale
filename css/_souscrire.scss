@@ -1,0 +1,18 @@
+@import 'variable';
+.souscrire{
+    margin-top: 6%;
+    background-image: url(../svg/points.svg);
+    background-repeat: repeat;
+    width: 100%;
+    h2{
+        text-align: center;
+       
+    }
+    button{
+        border: none;
+        background-color: $orange;
+        border-radius: 5px;
+        margin-left:40%;
+
+    }
+}

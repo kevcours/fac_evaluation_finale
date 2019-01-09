@@ -1,0 +1,11 @@
+@import 'variable';
+@import 'titre';
+@import 'photo';
+@import 'explication';
+
+.actualite{
+    margin-top: 4%;
+    width: 100%;
+    background-color: $orange;
+    color : $white;
+}

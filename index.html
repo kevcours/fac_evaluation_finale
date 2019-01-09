@@ -5,7 +5,7 @@
   <title>test</title>
   <link rel="stylesheet" href="./css/mon_site.css">
   <script>
-    function menu(){
+    function menuToogle(){
       if(document.getElementById('deroulant').style.display=="none")
       {
         document.getElementById('deroulant').style.display="block";
@@ -18,102 +18,228 @@
   </script>
 </head>
 <body>
-<div class="menu">
-  <svg class="logo">
-    <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectives_rectangle_Logo_ajuste"></use>
-  </svg>
-  <div class="hamburger">
-    <button onclick="menu()">
-        <img src="./img/menu.png">
-    </button>
-    
-  </div>
-</div>
-<div class="deroulant" id="deroulant">
-  <ul>
-    <li><a href="#">En savoir plus</a>   
+  <header>
+    <div class="menu">
       <svg class="logo">
-      <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+        <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectives_rectangle_Logo_ajuste"></use>
       </svg>
-    </li>
-    <li><a href="#">Nous découvrir</a>
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
-        </svg>
-    </li>
-    <li><a href="#">Nos instalation</a> 
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
-            </svg>
-    </li>
-    <li><a href="#">Economisons</a>
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
-            </svg>
-    </li>
-    <li><a href="#">En savoir plus</a>
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
-            </svg>
-    </li>
-  </ul>
-  <button>Souscrire</button>
-</div>
-<div class="imgPresentation">
-  <img src="./Photos/20161202_101925.jpg">
-</div>
-<div class="icon">
-    <svg class="logo">
-        <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectivesLogo_ss_texte"></use>
-      </svg>
-</div>
-<div class="logoEnergie">
-  <h2>L'energie est notre affaire</h2>
-  <h2>Investissons dans la transistion énergétique</h2>
-  <div class="chiffre">
-    <div class="coop">
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_coop"></use>
-        </svg>
-        <h2>coopérateur</h2>
-        <h2>190</h2>
+      <div class="hamburger">
+        <button onclick="menuToogle()">
+            <img class="Icon" src="./img/menu.png">
+        </button>
+        
+      </div>
     </div>
-    <div class="insta">
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_photovoltaique"></use>
-        </svg>
-        <h2>Installation</h2>
-        <h2>8</h2>
+    <div class="deroulant" id="deroulant">
+      <ul>
+        <li><a href="#">En savoir schema_souscrire</a>   
+          <svg class="Icon">
+          <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+          </svg>
+        </li>
+        <li><a href="#">Nous découvrir</a>
+            <svg class="Icon">
+                <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+            </svg>
+        </li>
+        <li><a href="#">Nos instalation</a> 
+            <svg class="Icon">
+                <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+                </svg>
+        </li>
+        <li><a href="#">Economisons</a>
+            <svg class="Icon">
+                <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+                </svg>
+        </li>
+        <li><a href="#">En savoir plus</a>
+            <svg class="Icon">
+                <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+                </svg>
+        </li>
+      </ul>
+      <button>Souscrire</button>
     </div>
-    <div class="produc">
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_production_energie"></use>
-        </svg>
-        <h2>Production Annuelle</h2>
-        <h2>141 MWh</h2>
+    <div class="imgPresentation">
+      <img src="./Photos/20161202_101925.jpg">
     </div>
-    <div class="capital">
-        <svg class="logo">
-            <use xlink:href="./img/sprite_symbol_pictos.svg#picto_capital"></use>
-        </svg>
-        <h2>Capital</h2>
-        <h2>1129950€</h2>
+  </header>
+  <main>
+      <div class="icon">
+          <svg class="logo">
+              <use xlink:href="./img/sprite_symbol_pictos.svg#EnergiesCollectivesLogo_ss_texte"></use>
+            </svg>
+      </div>
+      <div class="logoEnergie">
+        <h2>L'energie est notre affaire</h2>
+        <h2>Investissons dans la transistion énergétique</h2>
+        <div class="chiffre">
+          <div class="coop">
+              <svg class="logo">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#picto_coop"></use>
+              </svg>
+              <h2>coopérateur</h2>
+              <h2>190</h2>
+          </div>
+          <div class="insta">
+              <svg class="logo">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#picto_photovoltaique"></use>
+              </svg>
+              <h2>Installation</h2>
+              <h2>8</h2>
+          </div>
+          <div class="produc">
+              <svg class="logo">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#picto_production_energie"></use>
+              </svg>
+              <h2>Production Annuelle</h2>
+              <h2>141 MWh</h2>
+          </div>
+          <div class="capital">
+              <svg class="logo">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#picto_capital"></use>
+              </svg>
+              <h2>Capital</h2>
+              <h2>1129950€</h2>
+          </div>
+    
+        </div>
+      </div>
+      <div class="comprendre">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+        <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+        <ul>
+          <li>Nunc auctor diam ac tincidunt tempor</li>
+          <li>Nunc auctor diam ac tincidunt tempor</li>
+          <li>Nunc auctor diam ac tincidunt tempor</li>
+          
+        </ul>
+        <button><a href="#">Comprendre notre modele de production</a>  
+          <svg class="Icon">
+            <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+          </svg></button>
+      </div>
+      <div class="souscrire">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+          <button>Souscrire ! 
+            <svg class="Icon">
+              <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+            </svg> 
+          </button>
+      </div>
+      <div class="actualite">
+        <div class="titre">
+          <h2>Actualités</h2>
+          <div>
+              <svg class="Icon">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_gauche"></use>
+              </svg>
+              <svg class="Icon">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+              </svg>
+          </div>
+        </div>
+        <div>
+          <img class="photo" src="./Photos/IMG_20170121_122143.jpg">
+        </div>
+        <div class="explication">
+          <h3>Un 24 novembre de célébration</h3>
+          <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+          <svg class="Icon">
+              <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="demarche">
+          <div class="titre">
+              <h2>Notre Démarche</h2>
+            </div>
+            <div class="photo">
+                <img class="photo" src="./Photos/IMG_4107.jpg">
+            </div>
+            <div class="explication">
+              <h3>notre démarche</h3>
+              <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+              <svg class="Icon">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+              </svg>
+            </div>
+      </div>
+      <div class="installation">
+          <div class="titre">
+              <h2>Nos Installations</h2>
+            </div>
+            <div class="photo">
+                <img class="photo" src="./Photos/P1140365.JPG">
+            </div>
+            <div class="explication">
+              <h3>Atelier Embrun</h3>
+              <ul>
+                <li>date mise en service :..</li>
+                <li>puissance :..</li>
+                <li>date mise en service :..</li>
+                <li>date mise en service :..</li>
+              </ul>
+              <svg class="Icon">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+              </svg>
+            </div>
+            <button>Voir toutes nos installation</button>
+          
+      </div>
+      <div class="temoignage">
+          <div class="titre">
+              <h2>Témoignage</h2>
+              <div>
+                  <svg class="Icon">
+                      <use xlink:href="./img/sprite_symbol_pictos.svg#fleche_droite"></use>
+                  </svg>
+              </div>
+            </div>
+            <div>
+              <img class="photo" src="./Photos/recadrage1_site.jpg">
+            </div>
+            <div class="explication">
+              <h3>Mary de puy-saniere</h3>
+              <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
+              <svg class="Icon">
+                  <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+              </svg>
+            </div>
+      </div>
+
+  </main>
+  <footer> 
+    <div class="info">
+      <a href="#">Nous suivre <img class="Icon" src=""></a>
+      <a href="#">Nous contactez <svg class="Icon">
+          <use xlink:href="./img/sprite_symbol_pictos.svg#mail"></use>
+      </svg></a>
+      <a href="#">Rechercher <img class="Icon" src=""></a>
+
+    </div>
+    <div class="newsletter">
+      <legend>Abonnez vous a la Newsletter</legend>
+      <input type="text">
+      <button> 
+        <svg class="Icon">
+          <use xlink:href="./img/sprite_symbol_pictos.svg#schema_souscrire"></use>
+        </svg> 
+      </button>
+    </div>
+    <div class="partenaire">
+      <p>Nos partenaires: </p>
+      <img class="Icon" src="./partenaires/Initiative-nord-hautes-alpes_logo.png">
+      <img class="Icon" src="./partenaires/energie-partagee_logo.png">
+      <img class="Icon" src="./partenaires/enercoop_logo.png">
+      <img class="Icon" src="./partenaires/nef_logo.png">
+      <img class="Icon" src="./partenaires/syme05_logo.png">
+      <img class="Icon" src="./partenaires/udess-05_logo-seul.png">
+      <img class="Icon" src="./partenaires/parc-ecrins_logo.jpg">
     </div>
 
-  </div>
-</div>
-<div class="comprendre">
-  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-  <p>Nunc placerat scelerisque elit ultricies pulvinar. Cras magna metus, pharetra non lectus eu, lacinia euismod justo. Ut quis nisi et nunc dignissim elementum</p>
-  <ul>
-    <li>Nunc auctor diam ac tincidunt tempor</li>
-    <li>Nunc auctor diam ac tincidunt tempor</li>
-    <li>Nunc auctor diam ac tincidunt tempor</li>
-    
-  </ul>
-  <button><a href="#">Comprendre notre modele de production</a>  <svg class="logo">
-      <use xlink:href="./img/sprite_symbol_pictos.svg#plus"></use>
-    </svg></button>
-</div>
+  </footer>
+
 </body>
 </html>
